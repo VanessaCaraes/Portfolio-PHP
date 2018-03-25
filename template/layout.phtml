@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title> VANESSA CARAES CV EN LIGNE </title>
+		<!--<link rel="stylesheet" type="text/css" href="normalize.css">-->
+		<!--Police du titre H1-->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<!--Police des sous titres-->
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<!--Police classiques-->
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<!--feuille de style-->
+		<link rel="stylesheet" href="../sources/css/normalize.css">
+		<link rel="stylesheet"  href="../sources/css/style2.css" media="screen and (max-width: 900px)">
+		<link rel="stylesheet" href="../sources/css/style1.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+</head>
+ <!-- En-tête commune de l'application -->
+<body>
+
+<header>
+		
+		<nav class="navigation"> 
+		<ul class ="sommaire">
+			 <li><a href="index.php"> ACCUEIL</a> </li>
+			<li><a href="cv.php"> CV </a> </li>
+			<li> <a href="portfolio.php">PORTFOLIO </a> </li>
+			<li> <a href="apropos.php">A PROPOS </a> </li>
+			<li> <a href="liens.php">LIENS </a> </li>
+			<li> <a href="contact.php"> CONTACT </a> </li>
+
+			<!--A supprimer plus tard-->
+		</nav>
+		
+	</header>
+
+	<!--Contenu de la page-->
+
+	<main>
+
+	<?php include $template . '.phtml';?>
+
+	</main>
+
+
+
+	<!-- Pied de page commun de l'application -->
+
+<div id="conteneurfooter">
+	<footer>
+		<div class ="contact">
+		<h2 class ="titrefooter"> Contacts </h2>
+		<i class="fa fa-home" aria-hidden="true"></i>
+			<p>76 avenue de Paris Versailles </p>
+			<i class="fa fa-phone" aria-hidden="true"></i>
+			<p> 06 98 01 06 22 </p>
+			<i class="fa fa-at" aria-hidden="true"></i>
+			<p> <mailto>caraes06@hotmail.fr</mailto> </p>
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<p>Nationalité Française</p>
+			<i class="fa fa-map-marker" aria-hidden="true"></i>
+			<p>Mobilité : Ile de France</p>
+			</div>
+			
+			<!--A supprimer plus tard-->
+			
+			 <p> <a href="ad_portfolio.php"> Formulaire d'envoi des Projets </a> </p>
+			  <p> <a href="receivecontact.php"> Page de réception des messages </a> </p>
+			 
+
+		</footer>
+</div>
+	<script src="../sources/js/jquery.js"></script>
+	<script src="../sources/js/slider.js" ></script>
+
+	</body>
+	</html>
+

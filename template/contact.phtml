@@ -1,0 +1,70 @@
+
+<div class="page">
+	
+
+<main class="maincontact"> 
+
+<h1>  ECRIVEZ MOI  ! :) </h1>
+
+<div class="motifcontact"> 
+	<ul class= "list_question">
+		<li> <i class="fa fa-question-circle-o"></i> Si vous avez une  question </li>
+
+		<li> <i class="fa fa-handshake-o" ></i>Pour me dire bonjour </li>
+
+		<li> <i class="fa fa-coffee"> </i> Pour boire un café / thé / Cappuchino / Chocolat :) </li>
+
+		<li> <i class="fa fa-briefcase"> </i> Pour travailler avec moi </li>
+	
+		<li> <i class="fa fa-envelope" aria-hidden="true"></i>  Vous pouvez aussi m'écrire directement à cette adresse : caraes06@hotmail.fr </li>
+	
+		<li> <i class="fa fa-pencil-square-o"> </i> Envoyez moi un message par le biais du formulaire ci-dessous </li>
+
+	</ul>
+</div>
+
+
+<form  class="form_contact" method="post" action="../back-end/contact.php" >
+
+	<fieldset>
+	<legend> FORMULAIRE DE CONTACT</legend>
+	<p>
+		<label> Votre Prénom / Nom / Surnom / Pseudo </label>	
+		<input type="name" name="name" id="name" >	
+	</p>
+
+	<p>
+		<label> Votre adresse mail</label>
+		<input type="mail" name="mail" id="mail">
+	</p>
+
+	<p>
+		<label> Sujet de votre message </label>
+
+		<select type="subject" id="subject" name="subject"> 
+		
+			<option> Vous avez une question </option>
+			<option> Vous souhaitez travailler avec moiv</option>
+			<option> Autres : (Remarques, conseils, me dire bonjour, me proposer un café, cappuchino :) ) </option>
+			
+
+		</select>
+	</p>
+
+
+	<p>
+		<label> Votre message </label>
+
+	</p>
+	<p>	
+		<textarea type="content" id="content" name="content"> </textarea>
+	</p>
+
+	<button  class="buttonsubmit" type="submit"> Envoyer </button>
+
+	</fieldset>
+
+</form>
+</main>
+</div>
+

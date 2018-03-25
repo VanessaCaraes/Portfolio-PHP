@@ -1,0 +1,25 @@
+
+ <h5> Liste des Messages Reçus</h5>
+
+<article >
+
+<?php foreach ($messages as $message): ?>
+
+<div class="receivecontact">
+
+<p> <strong> Nom / Prénom/ Pseudo : </strong> <?php echo $message['Name']; ?></p>
+<p> <strong> Mail du Contact : </strong> <?php echo $message['Mail']; ?> </p>
+<p> <strong> Motif du Contact : </strong> <?php echo $message['Subject']; ?> </p>
+<p> <strong> Contenu du message : </strong> <?php echo $message['Content']; ?> </p>
+
+
+ <?php //Modification du format de la date
+$date = date_create($message['CreationTimeStamp']);
+
+	echo "Date d'envoi du message : " . date_format($date, 'd. m. Y'); ?>
+
+</div>
+
+<?php endforeach; ?>
+	
+</article>

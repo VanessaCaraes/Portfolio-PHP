@@ -1,0 +1,54 @@
+<div class="page">
+	
+
+<h1> MON PORTEFOLIO </h1>
+
+<p> Ci dessous une liste de tous les projets sur lesquels j'ai pu travailler</p>
+
+
+<div> 
+
+<h2> Un bref aperçu de mes réalisations </h2>
+
+<section class="sliderealisations">
+		<figure id="projets" class="projets">
+		<img class="projetimage" src="" alt="une photo des projets que j'ai réalisé">
+		<strong> <figcaption> </figcaption> </strong>
+		<button id="slider-next" title="Image suivante"><i class="fa fa-forward"> </i> </button> 
+		</figure>
+	</section>
+	
+</div>
+
+<article>
+
+	<?php foreach($projets as $projet): ?>
+
+<div class="mesprojets">
+
+	<p> <strong> Nom du Projet : </strong>   <?php echo $projet['Title']?> </p>
+	<p> <strong> Description du projet : </strong>  <?php echo $projet['Description']?> </p>
+	<p> <strong> Adresse du site : </strong>  <?php echo $projet['MailAddress']?>  </p>
+	<small> <strong > Réalisé par </strong>  :<?php echo $projet['NickName_Author']?> <?php echo $projet['LastName_Author']?>  </small>
+
+    <?php 
+   //Modification du format de la date 
+   $date = date_create($projet['CreationTimeStamp']);
+
+	echo  'Le ' . date_format($date, "d/m/Y"); ?>
+
+		<p> Image du projet </p>
+</div>
+
+	<?php endforeach; ?>
+
+</article>
+
+
+
+
+
+
+
+
+</div>
